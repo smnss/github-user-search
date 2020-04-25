@@ -27,7 +27,7 @@
       <div class="divTableCell">
         <div *ngFor="let repo of (user.repo | async) as list">
           <a href="{{ repo?.html_url }}">{{ repo?.name }} </a> 
-          <div>{{ repo?.description }} </div> 
+          <div class="discription">&#9758;{{ repo?.description }} </div> 
         </div>
       </div>
       <div class="divTableCell">

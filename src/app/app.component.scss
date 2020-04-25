@@ -51,6 +51,7 @@
     text-align: left;
     border-collapse: collapse;
     margin-top: 15px;
+    font-size: 14px;
   }
   .divTable.gitHubUsers .divTableCell, .divTable.gitHubUsers .divTableHead {
     border: 0px solid #AAAAAA;
@@ -59,6 +60,10 @@
   .divTable.gitHubUsers .divTableBody .divTableCell {
     font-size: 15px;
     color: #333333;
+    .discription {
+      text-indent: 15px;
+      font-size: 10px;
+    }
   }
   .divTable.gitHubUsers .divTableRow:nth-child(even) {
     background: #EAF1F5;
