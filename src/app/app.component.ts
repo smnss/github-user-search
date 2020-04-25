@@ -8,10 +8,10 @@ import { PaginaterService } from './services/paginater.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   public userDetail: any[] = [];
-  value = 'smnss';
+  value;
   pager: any = {};
   pageSize = 2;
   pageRecords: any[];
@@ -19,17 +19,9 @@ export class AppComponent implements OnInit {
   constructor(private gitUserSearchService: GitUserSearchService, private paginaterService: PaginaterService) {
   }
 
-
-
-  ngOnInit() {
-
-
-  }
-
   searchUser() {
     this.gitUserSearchService.getGitHubUser(this.value).subscribe(res => {
       this.userDetail = res;
-      console.log(this.userDetail);
       this.setPage(1);
     })
   }

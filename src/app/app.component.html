@@ -1,7 +1,7 @@
 <div class="wrap">
   <div class="search">
      <input type="text" class="searchTerm" [(ngModel)]="value" placeholder="Enter github username">
-     <button type="button" (click)="searchUser()" class="searchButton">
+     <button type="button" (click)="searchUser()" [disabled]="!value" class="searchButton">
        Search
     </button>
   </div>
@@ -23,7 +23,7 @@
         <img class="profile-pic" style="vertical-align: middle;" [src]="user.avatorUrl"/> &nbsp;
         <a href="{{ user.profileUrl }}">{{ user.userName }}</a>
       </div>
-      <div class="divTableCell"> {{ (user.followers | async)?.length }} {{ (user.followers | async)?.length ? 'Followers' : '' }} </div>
+      <div class="divTableCell"> <span *ngIf="(user.followers | async)?.length">{{ (user.followers | async)?.length }} Followers </span></div>
       <div class="divTableCell">
         <div *ngFor="let repo of (user.repo | async) as list">
           <a href="{{ repo?.html_url }}">{{ repo?.name }} </a> 
