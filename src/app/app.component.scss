@@ -1,0 +1,80 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    width: 50%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 10px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 80px;
+    height: 46px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+ 
+ .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+  div.gitHubUsers {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px solid #9B9898;
+    background-color: #F4F4F4;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  .divTable.gitHubUsers .divTableCell, .divTable.gitHubUsers .divTableHead {
+    border: 0px solid #AAAAAA;
+    padding: 10px 5px;
+  }
+  .divTable.gitHubUsers .divTableBody .divTableCell {
+    font-size: 15px;
+    color: #333333;
+  }
+  .divTable.gitHubUsers .divTableRow:nth-child(even) {
+    background: #EAF1F5;
+  }
+  .divTable.gitHubUsers .divTableHeading {
+    background: #2286AA;
+  }
+  .divTable.gitHubUsers .divTableHeading .divTableHead {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}

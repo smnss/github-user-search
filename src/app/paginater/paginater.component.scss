@@ -1,0 +1,32 @@
+.gitHubUsers .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #C4D6E6;
+  }
+  .gitHubUsers .tableFootStyle {
+    font-size: 14px;
+  }
+  .gitHubUsers .tableFootStyle .links {
+       text-align: right;
+  }
+  .gitHubUsers .tableFootStyle .links a{
+    display: inline-block;
+    background: #27729E;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 2px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .gitHubUsers .tableFootStyle .links a.disabled {
+    background: rgb(148, 148, 148);
+    cursor: not-allowed;
+  }
+  .gitHubUsers.outerTableFooter {
+    border-top: none;
+  }
+  .gitHubUsers.outerTableFooter .tableFootStyle {
+    padding: 3px 5px; 
+  }
