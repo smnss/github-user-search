@@ -1,11 +1,11 @@
 <div class="gitHubUsers outerTableFooter">
     <div class="tableFootStyle">
         <div class="links">
-            <a title="First page" (click)="setPage(1)" [ngClass]="{disabled:pager.currentPage === 1}">|<</a>
+            <a title="First page" (click)="setPage(1)" [ngClass]="{disabled:pager.currentPage === 1}"><<</a>
             <a title="Previous page" (click)="setPage(pager.currentPage - 1)" [ngClass]="{disabled:pager.currentPage === 1}"><</a>
             <a title="Next page" (click)="setPage(pager.currentPage + 1)"
                 [ngClass]="{disabled:pager.currentPage === pager.totalPages}">></a>
-            <a title="Last page" (click)="setPage(pager.totalPages)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">>|</a>
+            <a title="Last page" (click)="setPage(pager.totalPages)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">>></a>
         </div>
     </div>
 </div>
