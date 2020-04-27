@@ -1,17 +1,14 @@
-import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-paginater',
   templateUrl: './paginater.component.html',
   styleUrls: ['./paginater.component.scss']
 })
-export class PaginaterComponent  {
+export class PaginaterComponent {
 
   constructor() { }
 
-  // array of all items to be paged
- //private records: any[];
   @Input() pager;
   @Output() gotoPage: EventEmitter<any> = new EventEmitter<any>();
 
